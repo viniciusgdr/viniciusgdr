@@ -2,11 +2,6 @@
 
 <p align="center" ><img alt="viniciusgdr" src="https://raw.githubusercontent.com/MicaelliMedeiros/micaellimedeiros/master/image/computer-illustration.png"></p>
 
-### Sobre mim:
-  - 📌  Idade: 15 anos
-  - 📌  Escolaridade: Ensino Médio 1º Ano
-  - 📌  Cursando: Desenvolvimento de Sistemas
-
 ### Minhas Skills:
   - 🎓  97,4% de fluência em JavaScript
   - 📚  Nível intermediário-avançado em NodeJS
