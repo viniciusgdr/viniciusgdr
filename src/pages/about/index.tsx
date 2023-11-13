@@ -43,40 +43,40 @@ const aboutData = [
       {
         title: 'Web Development',
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiLaravel />,
-          <SiLivewire />,
-          <SiNextdotjs />,
+          <FaHtml5 key={0} />,
+          <FaCss3 key={1} />,
+          <FaJs key={2} />,
+          <FaReact key={3} />,
+          <SiLaravel key={4} />,
+          <SiLivewire key={5} />,
+          <SiNextdotjs key={6} />,
         ],
       },
       {
         title: 'Backend Development',
         icons: [
-          <SiNodedotjs />,
-          <SiTypescript />,
-          <SiGoland />,
-          <SiPhp />,
-          <SiC />,
-          <SiNestjs />
+          <SiNodedotjs key={0} />,
+          <SiTypescript key={1} />,
+          <SiGoland key={2} />,
+          <SiPhp key={3} />,
+          <SiC key={4} />,
+          <SiNestjs key={5} />
         ]
       },
       {
         title: 'Database',
         icons: [
-          <SiMongodb />,
-          <SiSqlite />,
-          <SiPostgresql />,
-          <SiPrisma />,
+          <SiMongodb key={0} />,
+          <SiSqlite key={1} />,
+          <SiPostgresql key={2} />,
+          <SiPrisma key={3} />,
         ]
       },
       {
         title: 'Mobile Development',
         icons: [
-          <SiReact />,
-          <SiExpo />,
+          <SiReact key={1} />,
+          <SiExpo key={2} />,
         ]
       }
     ],
