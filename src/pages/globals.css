@@ -19,13 +19,30 @@
   color: #f13024;
 }
 
+::-webkit-scrollbar {
+  width: 6.5px;
+  height: 6.5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f13024;
+}
+
+::-webkit-scrollbar-thumb {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  border-radius: 10px;
+}
+
 @layer base {
   body {
-    @apply bg-secondary overflow-hidden leading-relaxed;
+    @apply bg-secondary overflow-x-hidden leading-relaxed;
   }
 
   .page {
-    @apply w-full h-screen overflow-hidden;
+    @apply w-full h-screen overflow-x-hidden;
   }
 
   .h1 {
