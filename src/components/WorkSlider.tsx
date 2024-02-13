@@ -5,18 +5,23 @@ const workSlides = {
       images: [
         {
           title: 'TomoriBOT',
-          path: '/tomoribot.png',
+          path: '/projects/tomoribot.png',
           url: 'https://tomoribot.gdr.dev.br',
         },
         {
           title: 'gdrplay',
-          path: '/gdrplay.png',
+          path: '/projects/gdrplay.png',
           url: 'https://play.gdr.dev.br',
         },
         {
           title: 'BusConnect',
-          path: '/busconnect.png',
+          path: '/projects/busconnect.png',
           url: 'https://busconnect.com.br/',
+        }
+        {
+          title: 'gdrmusic',
+          path: '/projects/gdrmusic.png',
+          url: 'https://gdrmusic.vercel.app/',
         }
       ],
     }
