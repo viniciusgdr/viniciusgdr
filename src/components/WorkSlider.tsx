@@ -17,11 +17,11 @@ const workSlides = {
           title: 'BusConnect',
           path: '/projects/busconnect.png',
           url: 'https://busconnect.com.br/',
-        }
+        },
         {
           title: 'gdrmusic',
           path: '/projects/gdrmusic.png',
-          url: 'https://gdrmusic.vercel.app/',
+          url: 'https://gdrmusic.vercel.app/'
         }
       ],
     }
