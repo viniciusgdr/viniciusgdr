@@ -135,7 +135,7 @@ const aboutData = [
 
 const About = () => {
   const [index, setIndex] = useState(0);
-  return <div className='h-full bg-primary/30 py-32 text-center xl:text-left'>
+  return <div className='h-full bg-primary/30 md:py-32 text-center xl:text-left'>
     <Circles />
     <motion.div
       variants={fadeIn('right', 0.2)}
@@ -154,8 +154,24 @@ const About = () => {
           exit='hidden'
           className='h2'
         >
-          Construindo <span className='text-accent'>experiências</span> digitais incríveis, há mais de 2 anos
+          Construindo <span className='text-accent'>experiências</span> digitais, há mais de 2 anos
         </motion.h2>
+        <motion.button
+          variants={fadeIn('right', 0.4)}
+          initial='hidden'
+          animate='show'
+          exit='hidden'
+          className='btn'
+        >
+          <a
+            href='/curriculum.pdf'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='rounded-full px-6 py-3 bg-accent text-white font-bold text-lg'
+          >
+            Baixar Currículo
+          </a>
+        </motion.button>
         <motion.p
           variants={fadeIn('right', 0.4)}
           initial='hidden'
