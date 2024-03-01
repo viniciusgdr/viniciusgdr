@@ -11,7 +11,7 @@
 
 - 💬 Ask me about **React**
 
-- 📫 How to reach me **viniciusgdr@outlook.com**
+- 📫 How to reach me **viniciusgdr@gdr.dev.br**
 
 - 📄 Know about my experiences [https://gdr.dev.br](https://gdr.dev.br)
 
