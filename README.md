@@ -7,24 +7,23 @@
 </div>
 <br /> 
 
-- 🌱 I’m currently learning **PHP and Laravel**
-
 - 💬 Ask me about **React**
 
 - 📫 How to reach me **viniciusgdr@gdr.dev.br**
 
-- 📄 Know about my experiences [https://gdr.dev.br](https://gdr.dev.br)
+- 📄 Know about my experiences [https://viniciusgdr.com](https://viniciusgdr.com)
 
-- 2 years of technology experiene.
+- 3.5 years of technology experiene.
 - Technology enthusiast.
 
 ## Experience
 - Web apps.
 - System Integrations.
 - Chat Bots.
+- Mobile Development
 
 ## Development
-- Development and customization of websites, web systems and chat bots on WhatsApp or Telegram.
+- Development and customization of websites, web systems, mobile applications and chat bots on WhatsApp or Telegram.
 - Working on small and medium scale projects.
 
 ## Skills
@@ -102,5 +101,5 @@
   <a href="https://github.com/viniciusgdr">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=viniciusgdr&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=viniciusgdr&layout=compact&langs_count=7&theme=dracula"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/wakatime?username=viniciusgdr&theme=dracula"/>
+  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=viniciusgdr&theme=dracula&layout=compact" style="max-width: 100%;"/>
 </div>
