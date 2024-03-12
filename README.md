@@ -13,7 +13,7 @@
 
 - 📄 Know about my experiences [https://viniciusgdr.com](https://viniciusgdr.com)
 
-- 3.5 years of technology experiene.
+- 3.5 years of technology experience.
 - Technology enthusiast.
 
 ## Experience
