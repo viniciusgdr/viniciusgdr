@@ -14,10 +14,12 @@ const Layout = ({ children }: {
 }) => {
   return (
     <div className={`page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative`}>
-      <TopLeftImg />
-      <Nav />
-      <Header />
-      {children}
+      <div className="min-h-screen h-full bg-primary/60">
+        <TopLeftImg />
+        <Nav />
+        <Header />
+        {children}
+      </div>
     </div>
   )
 };

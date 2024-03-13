@@ -42,7 +42,7 @@
   }
 
   .page {
-    @apply w-full h-screen overflow-x-hidden;
+    @apply w-full overflow-x-hidden;
   }
 
   .h1 {

@@ -135,7 +135,7 @@ const aboutData = [
 
 const About = () => {
   const [index, setIndex] = useState(0);
-  return <div className='h-full bg-primary/30 md:py-32 text-center xl:text-left'>
+  return <div className='py-32 text-center xl:text-left'>
     <Circles />
     <motion.div
       variants={fadeIn('right', 0.2)}
@@ -178,7 +178,7 @@ const About = () => {
           animate='show'
           exit='hidden'
           className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>
-          Há 1 ano atrás, eu comecei sendo um programador freelancer. Desde então, fiz diversos projetos para atender as necessidades dos clientes.
+          Há 3 ano atrás, eu comecei sendo um programador freelancer. Desde então, fiz diversos projetos para atender as necessidades dos clientes.
         </motion.p>
         <motion.div
           variants={fadeIn('right', 0.6)}
@@ -211,7 +211,7 @@ const About = () => {
         initial='hidden'
         animate='show'
         exit='hidden'
-        className='flex flex-col w-full xl:max-w-[48%] h-[480px]'>
+        className='flex flex-col w-full xl:max-w-[48%] md:h-[480px] h-full'>
         <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4'>
           {
             aboutData.map((item, i) => {
