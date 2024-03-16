@@ -10,8 +10,7 @@ const workSlides = {
         },
         {
           title: 'gdrplay',
-          path: '/projects/gdrplay.png',
-          url: 'https://play.gdr.dev.br',
+          path: '/projects/gdrplay.png'
         },
         {
           title: 'BusConnect',
@@ -54,7 +53,7 @@ const WorkSlider = () => {
             <div className='grid grid-cols-2 gap-4 grid-rows-2 cursor-pointer'>
               {
                 slide.images.map((image, index) => {
-                  return <Link href={image.url} key={index} className='relative rounded-lg overflow-hidden flex items-center justify-center group'>
+                  return <Link href={image.url ?? '/'} key={index} className='relative rounded-lg overflow-hidden flex items-center justify-center group'>
                     <div className='flex items-center justify-center relative overflow-hidden group'>
                       <Image src={image.path} alt={image.title} width={500} height={300} />
                       <div className='absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700'></div>
