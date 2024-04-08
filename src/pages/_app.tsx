@@ -14,19 +14,19 @@ export default function RootLayout({ Component, pageProps }: {
   return (
     <Layout>
       <NextSeo
-        defaultTitle="Carlos Vinicius"
-        description="Carlos Vinicius - Desenvolvedor Web"
+        defaultTitle="Carlos Vinicius - Backend, Frontend | viniciusgdr"
+        description="Carlos Vinicius - Desenvolvedor Web e Mobile - HTML, CSS, JavaScript, React, Next.js, Node.js, TypeScript, Docker, Clean Architecture, Aplicações Escaláveis, Aplicações Web, Aplicações Mobile | viniciusgdr"
         canonical='https://viniciusgdr.com'
         openGraph={{
           url: 'https://viniciusgdr.com',
-          title: 'Carlos Vinicius',
-          description: 'Carlos Vinicius - Desenvolvedor Web',
+          title: 'Carlos Vinicius - Desenvolvedor Web e Mobile',
+          description: 'Carlos Vinicius - Desenvolvedor Web e Mobile - HTML, CSS, JavaScript, React, Next.js, Node.js, TypeScript, Docker, Clean Architecture, Aplicações Escaláveis, Aplicações Web, Aplicações Mobile | viniciusgdr',
           images: [
             {
               url: 'https://viniciusgdr.com/og-image.png',
               width: 1200,
               height: 630,
-              alt: 'Carlos Vinicius - Desenvolvedor Web',
+              alt: 'Carlos Vinicius - Desenvolvedor Web e Mobile',
             },
           ],
           site_name: 'Carlos Vinicius',
@@ -37,11 +37,11 @@ export default function RootLayout({ Component, pageProps }: {
           cardType: 'summary_large_image',
         }}
         themeColor='#000000'
-        titleTemplate='%s | Carlos Vinicius'
+        titleTemplate='%s | Carlos Vinicius - Desenvolvedor Web e Mobile'
         additionalLinkTags={[
           {
             rel: 'icon',
-            href: '/logo.png',
+            href: '/CV.png',
           },
         ]}
         additionalMetaTags={[

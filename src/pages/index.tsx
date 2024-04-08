@@ -1,5 +1,4 @@
 import ProjectsBtn from "@viniciusgdr/components/ProjectsBtn";
-import Image from "next/image";
 import { fadeIn } from "../../variants";
 import { motion } from "framer-motion";
 import Avatar from '@viniciusgdr/components/Avatar';
@@ -82,6 +81,16 @@ export default function Home() {
           className='w-full h-full max-w-[747px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]'>
           <Avatar />
         </motion.div>
+      </div>
+      <div className='hidden'>
+        {
+          // SEO Component
+        }
+        <h1>Carlos Vinicius - Desenvolvedor Web e Mobile</h1>
+        <p>Carlos Vinicius - Desenvolvedor Web e Mobile - HTML, CSS, JavaScript, React, Next.js, Node.js, TypeScript, Docker, Clean Architecture, Aplicações Escaláveis, Aplicações Web, Aplicações Mobile | viniciusgdr</p>
+        <h2>
+          viniciusgdr.com
+        </h2>
       </div>
     </div>
   );
