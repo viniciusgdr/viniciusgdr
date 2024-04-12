@@ -86,7 +86,7 @@ const aboutData = [
     info: [
       {
         title: 'Kellner: Sistema de Gerenciamento de Pedidos para Restaurantes e Negócios',
-        stage: '2024-Atual' 
+        stage: '2024-Atual'
       },
       {
         title: 'BusConnect: Horários de Ônibus',
@@ -160,22 +160,18 @@ const About = () => {
         >
           Construindo <span className='text-accent'>experiências</span> digitais, há mais de 2 anos
         </motion.h2>
-        <motion.button
+        <motion.a
           variants={fadeIn('right', 0.4)}
           initial='hidden'
           animate='show'
           exit='hidden'
-          className='btn'
+          href='/curriculum.pdf'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='rounded-full text-center w-56 self-center px-6 py-3 bg-accent text-white font-bold text-lg'
         >
-          <a
-            href='/curriculum.pdf'
-            target='_blank'
-            rel='noopener noreferrer'
-            className='rounded-full px-6 py-3 bg-accent text-white font-bold text-lg'
-          >
-            Baixar Currículo
-          </a>
-        </motion.button>
+          Baixar Currículo
+        </motion.a>
         <motion.p
           variants={fadeIn('right', 0.4)}
           initial='hidden'
