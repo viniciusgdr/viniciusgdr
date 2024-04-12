@@ -44,6 +44,6 @@ const config: Config = {
       DEFAULT: '15px',
     },
   },
-  plugins: [require('tailwind-scrollbar')],
+  plugins: [require('daisyui'), require('tailwind-scrollbar')],
 }
 export default config
