@@ -85,6 +85,10 @@ const aboutData = [
     title: 'experiências',
     info: [
       {
+        title: 'Kellner: Sistema de Gerenciamento de Pedidos para Restaurantes e Negócios',
+        stage: '2024-Atual' 
+      },
+      {
         title: 'BusConnect: Horários de Ônibus',
         stage: '2023-Atual',
       },
@@ -135,7 +139,7 @@ const aboutData = [
 
 const About = () => {
   const [index, setIndex] = useState(0);
-  return <div className='py-32 text-center xl:text-left'>
+  return <div className='pt-12 pb-32 md:py-32 text-center xl:text-left'>
     <Circles />
     <motion.div
       variants={fadeIn('right', 0.2)}
@@ -178,7 +182,7 @@ const About = () => {
           animate='show'
           exit='hidden'
           className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>
-          Há 3 ano atrás, eu comecei sendo um programador freelancer. Desde então, fiz diversos projetos para atender as necessidades dos clientes.
+          Há três anos, iniciei minha jornada como programador freelancer. Desde então, desenvolvi uma variedade de projetos para atender às demandas dos clientes.
         </motion.p>
         <motion.div
           variants={fadeIn('right', 0.6)}

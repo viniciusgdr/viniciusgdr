@@ -6,7 +6,7 @@ import { fadeIn } from "../../../variants";
 
 const Services = () => {
   return (
-    <div className="py-36 flex items-center">
+    <div className="py-12 md:py-36 flex items-center">
       <Circles />
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">

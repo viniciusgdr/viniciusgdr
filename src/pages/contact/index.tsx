@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../../../variants';
 const Contact = () => {
   return <div className=''>
-    <div className='container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full'>
+    <div className='container mx-auto py-12 md:py-32 text-center xl:text-left flex items-center justify-center h-full'>
       <div className='flex flex-col w-full max-w-[700px]'>
         <motion.h2
           variants={fadeIn("right", 0.2)}
