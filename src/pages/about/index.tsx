@@ -158,7 +158,7 @@ const About = () => {
           exit='hidden'
           className='h2'
         >
-          Construindo <span className='text-accent'>experiências</span> digitais, há mais de 2 anos
+          Com mais de 3 anos de experiência na construção de <span className='text-accent'>experiências</span> digitais.
         </motion.h2>
         <motion.a
           variants={fadeIn('right', 0.4)}
