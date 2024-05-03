@@ -35,6 +35,7 @@ import { motion } from 'framer-motion';
 import Avatar from '@viniciusgdr/components/Avatar';
 import { fadeIn } from '../../../variants';
 import CountUp from 'react-countup';
+import Image from 'next/image';
 //  data
 const aboutData = [
   {
@@ -116,6 +117,20 @@ const aboutData = [
       {
         title: 'Técnico em Redes de Computadores - Escola Técnica Estadual Governador Eduardo Campos',
         stage: '2023-2025',
+      },
+      {
+        title: 'Hackers do Bem - Curso de Segurança da Informação e Redes de Computadores',
+        stage: '2024',
+        certs: [
+          {
+            url: '/certs/hackersdobem-basico.pdf',
+            preview: '/certs/preview/bem1.png'
+          },
+          {
+            url: '/certs/hackersdobem-fundamental.pdf',
+            preview: '/certs/preview/bem2.png'
+          }
+        ]
       },
       {
         title: 'NodeJS, Typescript, TDD, DDD, Clean Architecture e SOLID course, 4Dev academy - Rodrigo Manguinho',
@@ -226,8 +241,12 @@ const About = () => {
         </div>
         <div className='py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start'>
           {aboutData[index].info.map((item, i) => {
-            return <div key={i} className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60'>
-              <div className='font-light mb-2 md:mb-0'>{item.title}</div>
+            return <div key={i} className={'flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60' + ('certs' in item ? ' cursor-pointer' : '')} onClick={() => {
+              if ('certs' in item) {
+                (document.getElementById('modal_' + i) as any).showModal();
+              }
+            }}>
+              <div className={'font-light mb-2 md:mb-0 ' + ('certs' in item && 'underline')}>{item.title}</div>
               <div className='hidden md:flex'>-</div>
               {
                 'stage' in item && <div className='text-end'>{item.stage}</div> || 'icons' in item && (
@@ -239,6 +258,41 @@ const About = () => {
                     }
                   </div>
                 )
+              }
+              {
+                'certs' in item && <dialog id={'modal_' + i} className="modal z-50">
+                  <div className="modal-box bg-primary">
+                    <form method="dialog">
+                      <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                    </form>
+                    <div className='flex items-center gap-3'>
+                      <h3 className="font-bold text-lg">
+                        {
+                          item.certs!.length > 1 ? 'Certificados' : 'Certificado'
+                        }
+                      </h3>
+                    </div>
+                    <div className='flex flex-col py-4'>
+                      {
+                        item.certs!.map((cert, i2) => {
+                          return <div key={i2} className='flex flex-col gap-x-6 items-center' onClick={() => {
+                            window.open(cert.url, '_blank');
+                          }}>
+                            <Image src={cert.preview} alt={item.title} width={300} height={200} />
+                            <h3 className="pb-4 break-all w-full text-white text-center">
+                              {cert.url}
+                            </h3>
+                          </div>;
+                        })
+                      }
+                    </div>
+                    <div className="modal-action">
+                      <form method="dialog">
+                        <button className="btn">Fechar</button>
+                      </form>
+                    </div>
+                  </div>
+                </dialog>
               }
             </div>;
           })}
