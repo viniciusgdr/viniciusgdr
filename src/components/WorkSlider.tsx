@@ -37,7 +37,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-import { Pagination } from "swiper";
+import { FreeMode, Pagination } from "swiper";
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -49,7 +49,7 @@ const WorkSlider = () => {
       pagination={{
         clickable: true,
       }}
-      modules={[Pagination]}
+      modules={[FreeMode, Pagination]}
       className='h-[280px] sm:h-[480px]'
     >
       {
