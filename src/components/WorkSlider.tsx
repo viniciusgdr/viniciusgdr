@@ -46,6 +46,16 @@ const WorkSlider = () => {
     <Swiper
       spaceBetween={10}
       freeMode={true}
+      breakpoints={{
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        720: {
+          slidesPerView: 4,
+          spaceBetween: 10,
+        }
+      }}
       pagination={{
         clickable: true,
       }}
