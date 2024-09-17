@@ -49,6 +49,7 @@ const WorkSlider = () => {
       pagination={{
         clickable: true,
       }}
+      
       modules={[FreeMode, Pagination]}
       className='h-[280px] sm:h-[480px]'
     >
