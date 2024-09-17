@@ -13,14 +13,19 @@ const workSlides = {
           path: '/projects/gdrplay.png'
         },
         {
-          title: 'BusConnect',
-          path: '/projects/busconnect.png',
-          url: 'https://busconnect.com.br/',
+          title: 'AIAChat',
+          path: '/projects/aiachat.png',
+          url: 'https://aiachat.com.br',
         },
         {
           title: 'gdrmusic',
           path: '/projects/gdrmusic.png',
           url: 'http://p6yabb2eqi3fd4dzqxtj77slywugkkhjdoo56dnu7kk7d3r23xdwsjad.onion/'
+        },
+        {
+          title: 'BusConnect',
+          path: '/projects/busconnect.png',
+          url: 'https://busconnect.com.br/',
         }
       ],
     }

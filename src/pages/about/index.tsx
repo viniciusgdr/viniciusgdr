@@ -86,20 +86,28 @@ const aboutData = [
     title: 'experiências',
     info: [
       {
-        title: 'Kellner: Sistema de Gerenciamento de Pedidos para Restaurantes e Negócios',
-        stage: '2024-Atual'
+        title: 'CargoBR',
+        stage: 'Set. 2024 - Atual'
       },
       {
-        title: 'BusConnect: Horários de Ônibus',
-        stage: '2023-Atual',
+        title: 'AIAChat',
+        stage: 'Mai. 2024 - Atual'
+      },
+      {
+        title: 'Kellner: Sistema de Gerenciamento de Pedidos para Restaurantes e Negócios',
+        stage: 'Mai. 2024 - Atual'
       },
       {
         title: 'Auxiliar de Monitoramento na Cooper-UNE',
-        stage: '2022-Atual',
+        stage: 'Mar. 2022 - Abr. 2024',
       },
       {
         title: 'TomoriBOT WhatsApp',
-        stage: '2020-Atual',
+        stage: '2020 - Atual',
+      },
+      {
+        title: 'BusConnect: Horários de Ônibus',
+        stage: '2023',
       },
       {
         title: 'gdrplay: Plataforma de Streaming',
