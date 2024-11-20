@@ -29,6 +29,8 @@ import {
   SiC,
   SiReact,
   SiExpo,
+  SiFlutter,
+  SiDart,
 } from "react-icons/si";
 
 import { motion } from 'framer-motion';
@@ -48,9 +50,7 @@ const aboutData = [
           <FaCss3 key={1} />,
           <FaJs key={2} />,
           <FaReact key={3} />,
-          <SiLaravel key={4} />,
-          <SiLivewire key={5} />,
-          <SiNextdotjs key={6} />,
+          <SiNextdotjs key={4} />
         ],
       },
       {
@@ -59,7 +59,7 @@ const aboutData = [
           <SiNodedotjs key={0} />,
           <SiTypescript key={1} />,
           <SiGoland key={2} />,
-          <SiPhp key={3} />,
+          <SiDart key={3} />,
           <SiC key={4} />,
           <SiNestjs key={5} />
         ]
@@ -78,6 +78,7 @@ const aboutData = [
         icons: [
           <SiReact key={1} />,
           <SiExpo key={2} />,
+          <SiFlutter key={3} />,
         ]
       }
     ],
@@ -276,7 +277,7 @@ const About = () => {
                     <div className='flex items-center gap-3'>
                       <h3 className="font-bold text-lg">
                         {
-                          item.certs!.length > 1 ? 'Certificados' : 'Certificado'
+                          'Certificado' + (item.certs!.length > 1 ? 's' : '')
                         }
                       </h3>
                     </div>
