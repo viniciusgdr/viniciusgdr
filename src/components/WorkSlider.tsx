@@ -13,14 +13,19 @@ const workSlides = {
           path: '/projects/gdrplay.png'
         },
         {
-          title: 'BusConnect',
-          path: '/projects/busconnect.png',
-          url: 'https://busconnect.com.br/',
+          title: 'AIAChat',
+          path: '/projects/aiachat.png',
+          url: 'https://aiachat.com.br',
         },
         {
           title: 'gdrmusic',
           path: '/projects/gdrmusic.png',
           url: 'http://p6yabb2eqi3fd4dzqxtj77slywugkkhjdoo56dnu7kk7d3r23xdwsjad.onion/'
+        },
+        {
+          title: 'BusConnect',
+          path: '/projects/busconnect.png',
+          url: 'https://busconnect.com.br/',
         }
       ],
     }
@@ -32,7 +37,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-import { Pagination } from "swiper";
+import { FreeMode, Pagination } from "swiper";
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -44,7 +49,8 @@ const WorkSlider = () => {
       pagination={{
         clickable: true,
       }}
-      modules={[Pagination]}
+      
+      modules={[FreeMode, Pagination]}
       className='h-[280px] sm:h-[480px]'
     >
       {
