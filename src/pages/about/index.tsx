@@ -95,16 +95,16 @@ const aboutData = [
         stage: 'Mai. 2024 - Atual'
       },
       {
+        title: 'TomoriBOT WhatsApp',
+        stage: '2020 - Atual',
+      },
+      {
         title: 'Kellner: Sistema de Gerenciamento de Pedidos para Restaurantes e Negócios',
-        stage: 'Mai. 2024 - Atual'
+        stage: 'Mai. 2024 - Dez. 2024'
       },
       {
         title: 'Auxiliar de Monitoramento na Cooper-UNE',
         stage: 'Mar. 2022 - Abr. 2024',
-      },
-      {
-        title: 'TomoriBOT WhatsApp',
-        stage: '2020 - Atual',
       },
       {
         title: 'BusConnect: Horários de Ônibus',
