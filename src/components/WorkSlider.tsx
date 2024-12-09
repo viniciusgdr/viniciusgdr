@@ -47,7 +47,7 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Autoplay, FreeMode, Navigation, Pagination } from "swiper";
+import { FreeMode, Pagination } from "swiper";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -59,10 +59,7 @@ const WorkSlider = () => {
       pagination={{
         clickable: true,
       }}
-      autoplay={{
-        delay: 5000,
-      }}
-      modules={[FreeMode, Pagination, Navigation, Autoplay]}
+      modules={[FreeMode, Pagination]}
       className="h-[280px] sm:h-[480px]"
     >
       {workSlides.slides.map((slide, index) => {
