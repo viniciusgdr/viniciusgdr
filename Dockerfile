@@ -27,6 +27,4 @@ COPY --from=build /app/package.json ./package.json
 
 USER root
 
-EXPOSE 3000
-
 CMD ["npx", "next", "start", "-p", "3000"]
