@@ -43,7 +43,7 @@ const Nav = () => {
                     </div>
                   </div>
                 </div>
-                <div>
+                <div className='p-5 md:p-1'>
                   {item.icon}
                 </div>
               </Link>
