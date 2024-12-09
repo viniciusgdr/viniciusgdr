@@ -20,7 +20,7 @@ const workSlides = {
         {
           title: "gdrmusic",
           path: "/projects/gdrmusic.png",
-          url: "http://p6yabb2eqi3fd4dzqxtj77slywugkkhjdoo56dnu7kk7d3r23xdwsjad.onion/",
+          url: "https://gdrmusic.viniciusgdr.com",
         },
       ],
     },
