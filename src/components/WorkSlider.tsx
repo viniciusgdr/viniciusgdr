@@ -28,8 +28,7 @@ const workSlides = {
       images: [
         {
           title: "BusConnect",
-          path: "/projects/busconnect.png",
-          url: "https://busconnect.com.br/",
+          path: "/projects/busconnect.png"
         },
         {
           title: "LimpaNomeCPF",
