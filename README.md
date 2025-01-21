@@ -1,6 +1,6 @@
 <h1 align="center">Hi 👋, I'm Vinicius</h1>
 
-<div align="center"><a href="https://gdr.dev.br"><img src="https://img.shields.io/badge/Portfolio-4299f0?style=for-the-badge&logo=files&logoColor=white" alt="Portifólio"></a>
+<div align="center"><a href="https://viniciusgdr.com"><img src="https://img.shields.io/badge/Portfolio-4299f0?style=for-the-badge&logo=files&logoColor=white" alt="Portifólio"></a>
 <a href="https://t.me/viniciusgdr1"><img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
 <p align="center" ><img alt="viniciusgdr" src="https://raw.githubusercontent.com/MicaelliMedeiros/micaellimedeiros/master/image/computer-illustration.png"></p>
 
@@ -9,7 +9,7 @@
 
 - 💬 Ask me about **React**
 
-- 📫 How to reach me **viniciusgdr@gdr.dev.br**
+- 📫 How to reach me **vinicius@viniciusgdr.com**
 
 - 📄 Know about my experiences [https://viniciusgdr.com](https://viniciusgdr.com)
 
