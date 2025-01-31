@@ -44,12 +44,11 @@
   <img src="https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white" alt="Node.js"/>
   <img src="https://img.shields.io/badge/Typescript-3178C6?logo=typescript&logoColor=white" alt="Typescript"/>
   <img src="https://img.shields.io/badge/Go-3178C6?logo=Go&logoColor=white" alt="Go"/>
-  <img src="https://img.shields.io/badge/C/C++-3178C6?logo=C&logoColor=white" alt="C"/>
+  <img src="https://img.shields.io/badge/C/C++-3178C6?logo=C&logoColor=white" alt="C++"/>
   <img src="https://img.shields.io/badge/Express-000000?logo=express&logoColor=white" alt="Express"/>
   <img src="https://img.shields.io/badge/NestJS-E0234E?logo=nestjs&logoColor=white" alt="NestJS"/>
   <img src="https://img.shields.io/badge/Mongoose-880000?logo=mongoose&logoColor=white" alt="Mongoose"/>
   <img src="https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white" alt="Prisma"/>
-  <img src="https://img.shields.io/badge/Php-2D3748?logo=php&logoColor=white" alt="PHP"/>
 </div>
 
 ### Mobile
