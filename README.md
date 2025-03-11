@@ -1,6 +1,6 @@
 <h1 align="center">Hi 👋, I'm Vinicius</h1>
 
-<div align="center"><a href="https://gdr.dev.br"><img src="https://img.shields.io/badge/Portfolio-4299f0?style=for-the-badge&logo=files&logoColor=white" alt="Portifólio"></a>
+<div align="center"><a href="https://viniciusgdr.com"><img src="https://img.shields.io/badge/Portfolio-4299f0?style=for-the-badge&logo=files&logoColor=white" alt="Portifólio"></a>
 <a href="https://t.me/viniciusgdr1"><img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"></a>
 <p align="center" ><img alt="viniciusgdr" src="https://raw.githubusercontent.com/MicaelliMedeiros/micaellimedeiros/master/image/computer-illustration.png"></p>
 
@@ -9,7 +9,7 @@
 
 - 💬 Ask me about **React**
 
-- 📫 How to reach me **viniciusgdr@gdr.dev.br**
+- 📫 How to reach me **vinicius@viniciusgdr.com**
 
 - 📄 Know about my experiences [https://viniciusgdr.com](https://viniciusgdr.com)
 
@@ -44,12 +44,11 @@
   <img src="https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white" alt="Node.js"/>
   <img src="https://img.shields.io/badge/Typescript-3178C6?logo=typescript&logoColor=white" alt="Typescript"/>
   <img src="https://img.shields.io/badge/Go-3178C6?logo=Go&logoColor=white" alt="Go"/>
-  <img src="https://img.shields.io/badge/C/C++-3178C6?logo=C&logoColor=white" alt="C"/>
+  <img src="https://img.shields.io/badge/C/C++-3178C6?logo=C&logoColor=white" alt="C++"/>
   <img src="https://img.shields.io/badge/Express-000000?logo=express&logoColor=white" alt="Express"/>
   <img src="https://img.shields.io/badge/NestJS-E0234E?logo=nestjs&logoColor=white" alt="NestJS"/>
   <img src="https://img.shields.io/badge/Mongoose-880000?logo=mongoose&logoColor=white" alt="Mongoose"/>
   <img src="https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white" alt="Prisma"/>
-  <img src="https://img.shields.io/badge/Php-2D3748?logo=php&logoColor=white" alt="PHP"/>
 </div>
 
 ### Mobile
