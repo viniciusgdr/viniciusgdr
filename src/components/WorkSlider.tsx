@@ -6,7 +6,7 @@ const workSlides = {
         {
           title: "TomoriBOT",
           path: "/projects/tomoribot.png",
-          url: "https://tomoribot.gdr.dev.br",
+          url: "https://tomoribot.com.br",
         },
         {
           title: "gdrplay",
