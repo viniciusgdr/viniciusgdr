@@ -87,16 +87,16 @@ const aboutData = [
     title: 'experiências',
     info: [
       {
-        title: 'CargoBR',
-        stage: 'Set. 2024 - Atual'
-      },
-      {
-        title: 'AIAChat',
+        title: 'GDRLabs',
         stage: 'Mai. 2024 - Atual'
       },
       {
         title: 'TomoriBOT WhatsApp',
         stage: '2020 - Atual',
+      },
+      {
+        title: 'CargoBR',
+        stage: 'Set. 2024 - Mar. 2025',
       },
       {
         title: 'Kellner: Sistema de Gerenciamento de Pedidos para Restaurantes e Negócios',
@@ -125,7 +125,7 @@ const aboutData = [
     info: [
       {
         title: 'Técnico em Redes de Computadores - Escola Técnica Estadual Governador Eduardo Campos',
-        stage: '2023-2025',
+        stage: 'Fev. 2023 - Dez. 2025',
       },
       {
         title: 'Hackers do Bem - Curso de Segurança da Informação e Redes de Computadores',
@@ -182,7 +182,7 @@ const About = () => {
           exit='hidden'
           className='h2'
         >
-          Com mais de 3 anos de experiência na construção de <span className='text-accent'>experiências</span> digitais.
+          +3 anos criando <span className='text-accent'>experiências</span> digitais.
         </motion.h2>
         <motion.a
           variants={fadeIn('right', 0.4)}
@@ -213,7 +213,7 @@ const About = () => {
           <div className='flex flex-1 xl:gap-x-6'>
             <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
               <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                <CountUp start={0} end={3} duration={5} /> +
+                <CountUp start={0} end={4} duration={5} /> +
               </div>
               <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
                 Anos de Experiência
@@ -221,7 +221,7 @@ const About = () => {
             </div>
             <div className='relative flex-1 after:w-[1px] after:h-full after:absolute after:top-0 after:right-0'>
               <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                <CountUp start={0} end={6} duration={5} /> +
+                <CountUp start={0} end={10} duration={5} /> +
               </div>
               <div className='text-xs text-left pl-2 xl:pl-0 uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
                 Projetos Completados

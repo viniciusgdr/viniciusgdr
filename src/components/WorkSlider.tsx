@@ -9,8 +9,9 @@ const workSlides = {
           url: "https://tomoribot.com.br",
         },
         {
-          title: "gdrplay",
-          path: "/projects/gdrplay.png",
+          title: "Eternify",
+          path: "/projects/eternify.png",
+          url: "https://eternify.app",
         },
         {
           title: "AIAChat",
@@ -18,9 +19,9 @@ const workSlides = {
           url: "https://aiachat.com.br",
         },
         {
-          title: "gdrmusic",
-          path: "/projects/gdrmusic.png",
-          url: "https://gdrmusic.viniciusgdr.com",
+          title: "FreteBR",
+          path: "/projects/fretebr.png",
+          url: "https://fretebr.com",
         },
       ],
     },
@@ -34,6 +35,15 @@ const workSlides = {
           title: "LimpaNomeCPF",
           path: "/projects/limpanomecpf.png",
           url: "https://limpanomecpf.com.br/",
+        },
+        {
+          title: "gdrplay",
+          path: "/projects/gdrplay.png",
+        },
+        {
+          title: "gdrmusic",
+          path: "/projects/gdrmusic.png",
+          url: "https://gdrmusic.viniciusgdr.com",
         },
       ],
     },

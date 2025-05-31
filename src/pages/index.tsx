@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import Avatar from "@viniciusgdr/components/Avatar";
 import ParticlesContainer from "@viniciusgdr/components/ParticlesContainer";
 import { TypeAnimation } from "react-type-animation";
-import Image from "next/image";
 
 export default function Home() {
   return (
