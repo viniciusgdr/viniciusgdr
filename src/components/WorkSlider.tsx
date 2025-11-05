@@ -32,11 +32,6 @@ const workSlides = {
           path: "/projects/busconnect.png"
         },
         {
-          title: "LimpaNomeCPF",
-          path: "/projects/limpanomecpf.png",
-          url: "https://limpanomecpf.com.br/",
-        },
-        {
           title: "gdrplay",
           path: "/projects/gdrplay.png",
         },
