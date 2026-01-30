@@ -87,11 +87,11 @@ const aboutData = [
     title: 'experiências',
     info: [
       {
-        title: 'GDRLabs',
-        stage: 'Mai. 2024 - Atual'
+        title: 'Accio Educacional',
+        stage: 'Jun. 2025 - Atual'
       },
       {
-        title: 'TomoriBOT WhatsApp',
+        title: 'Projeto TomoriBOT WhatsApp',
         stage: '2020 - Atual',
       },
       {
@@ -99,20 +99,8 @@ const aboutData = [
         stage: 'Set. 2024 - Mar. 2025',
       },
       {
-        title: 'Kellner: Sistema de Gerenciamento de Pedidos para Restaurantes e Negócios',
-        stage: 'Mai. 2024 - Dez. 2024'
-      },
-      {
         title: 'Auxiliar de Monitoramento na Cooper-UNE',
         stage: 'Mar. 2022 - Abr. 2024',
-      },
-      {
-        title: 'BusConnect: Horários de Ônibus',
-        stage: '2023',
-      },
-      {
-        title: 'gdrplay: Plataforma de Streaming',
-        stage: '2023',
       },
       {
         title: 'TuttaBOT: Apostas Online Automatizadas para a Blaze',
@@ -163,7 +151,7 @@ const aboutData = [
 
 const About = () => {
   const [index, setIndex] = useState(0);
-  return <div className='pt-12 pb-32 md:py-32 text-center xl:text-left'>
+  return <div className='pt-12 pb-32 md:pt-32 text-center xl:text-left'>
     <Circles />
     <motion.div
       variants={fadeIn('right', 0.2)}
@@ -180,7 +168,7 @@ const About = () => {
           initial='hidden'
           animate='show'
           exit='hidden'
-          className='h2'
+          className='h2 max-w-[640px] mx-auto xl:mx-0'
         >
           +3 anos criando <span className='text-accent'>experiências</span> digitais.
         </motion.h2>
@@ -192,7 +180,7 @@ const About = () => {
           href='/curriculum.pdf'
           target='_blank'
           rel='noopener noreferrer'
-          className='rounded-full text-center w-56 self-center px-6 py-3 bg-accent text-white font-bold text-lg'
+          className='rounded-full text-center w-56 self-center xl:self-start px-6 py-3 bg-accent text-white font-bold text-lg'
         >
           Baixar Currículo
         </motion.a>
@@ -201,19 +189,19 @@ const About = () => {
           initial='hidden'
           animate='show'
           exit='hidden'
-          className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>
-          Há três anos, iniciei minha jornada como programador freelancer. Desde então, desenvolvi uma variedade de projetos para atender às demandas dos clientes.
+          className='max-w-[680px] mx-auto xl:mx-0 mb-6 xl:mb-8 px-2 xl:px-0'>
+          Há cinco anos, iniciei minha jornada como programador freelancer. Desde então, desenvolvi uma variedade de projetos para atender às demandas dos clientes. Atualmente sou dono da Accio Educacional, onde desenvolvi uma solução de reconhecimento facial para escolas e atuo como desenvolvedor full stack. Minha paixão sempre foi criar soluções inovadoras que impactam positivamente a vida das pessoas.
         </motion.p>
         <motion.div
           variants={fadeIn('right', 0.6)}
           initial='hidden'
           animate='show'
           exit='hidden'
-          className='hidden md:flex md:max-w-xl max:max-w-none mx-auto xl:mx-0 mb-8'>
+          className='hidden md:flex md:max-w-2xl max:max-w-none mx-auto xl:mx-0 mb-6'>
           <div className='flex flex-1 xl:gap-x-6'>
             <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
               <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                <CountUp start={0} end={4} duration={5} /> +
+                <CountUp start={0} end={5} duration={5} /> +
               </div>
               <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
                 Anos de Experiência
@@ -221,7 +209,7 @@ const About = () => {
             </div>
             <div className='relative flex-1 after:w-[1px] after:h-full after:absolute after:top-0 after:right-0'>
               <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                <CountUp start={0} end={10} duration={5} /> +
+                <CountUp start={0} end={8} duration={5} /> +
               </div>
               <div className='text-xs text-left pl-2 xl:pl-0 uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
                 Projetos Completados
@@ -248,26 +236,42 @@ const About = () => {
             })
           }
         </div>
-        <div className='py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start'>
+        <div className='py-2 xl:py-6 flex flex-col gap-y-3 xl:gap-y-4 items-center xl:items-start'>
           {aboutData[index].info.map((item, i) => {
-            return <div key={i} className={'flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60' + ('certs' in item ? ' cursor-pointer' : '')} onClick={() => {
+            const isTimeline = 'stage' in item;
+            const isSkills = 'icons' in item;
+            const isCerts = 'certs' in item;
+            return <div
+              key={i}
+              className={'w-full ' + (isTimeline ? 'max-w-[560px]' : 'max-w-max') + (isCerts ? ' cursor-pointer' : '')}
+              onClick={() => {
               if ('certs' in item) {
                 (document.getElementById('modal_' + i) as any).showModal();
               }
             }}>
-              <div className={'font-light mb-2 md:mb-0 ' + ('certs' in item && 'underline')}>{item.title}</div>
-              <div className='hidden md:flex'>-</div>
-              {
-                'stage' in item && <div className='text-end'>{item.stage}</div> || 'icons' in item && (
-                  <div className='flex gap-x-4'>
-                    {
-                      item.icons.map((icon, i2) => {
-                        return <div key={i2} className='text-2xl'>{icon}</div>;
-                      })
-                    }
+              <div className={
+                isTimeline
+                  ? 'grid gap-2 sm:grid-cols-[1fr_auto] items-start rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white/80'
+                  : 'flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/70'
+              }>
+                <div className={
+                  'font-medium leading-snug ' + (isCerts ? 'underline decoration-white/30' : '')
+                }>
+                  {item.title}
+                </div>
+                {isTimeline && (
+                  <div className='text-xs sm:text-sm uppercase tracking-[1px] text-white/60 sm:text-right'>
+                    {item.stage}
                   </div>
-                )
-              }
+                )}
+                {isSkills && (
+                  <div className='flex gap-x-4'>
+                    {item.icons.map((icon, i2) => {
+                      return <div key={i2} className='text-2xl'>{icon}</div>;
+                    })}
+                  </div>
+                )}
+              </div>
               {
                 'certs' in item && <dialog id={'modal_' + i} className="modal z-50">
                   <div className="modal-box bg-primary">

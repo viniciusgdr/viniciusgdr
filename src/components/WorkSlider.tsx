@@ -9,24 +9,26 @@ const workSlides = {
           url: "https://tomoribot.com.br",
         },
         {
-          title: "Eternify",
-          path: "/projects/eternify.png",
-          url: "https://eternify.app",
+          title: "Accio Educacional",
+          path: "/projects/accio.png",
+          url: "https://accioedu.com",
         },
         {
           title: "AIAChat",
           path: "/projects/aiachat.png",
-          url: "https://aiachat.com.br",
         },
         {
           title: "FreteBR",
-          path: "/projects/fretebr.png",
-          url: "https://fretebr.com",
+          path: "/projects/fretebr.png"
         },
       ],
     },
     {
       images: [
+        {
+          title: "Eternify",
+          path: "/projects/eternify.png",
+        },
         {
           title: "BusConnect",
           path: "/projects/busconnect.png"
@@ -37,8 +39,7 @@ const workSlides = {
         },
         {
           title: "gdrmusic",
-          path: "/projects/gdrmusic.png",
-          url: "https://gdrmusic.viniciusgdr.com",
+          path: "/projects/gdrmusic.png"
         },
       ],
     },

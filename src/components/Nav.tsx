@@ -26,8 +26,8 @@ export const navData = [
 const Nav = () => {
   const pathname = usePathname()
   return (
-    <nav className='flex flex-col items-center xl:justify-center gap-y-4 fixed h-max bottom-0 mt-auto xl:right-[2%] z-50 top-0 w-full xl:w-16 xl:max-w-md xl:h-screen'>
-      <div className='flex w-full xl:flex-col items-center justify-between xl:justify-center gap-y-10 px-4 md:px-40 xl:px-0 h-[80px] bg-white/10 xl:h-max py-8 backdrop-blur-sm text-3xl xl:text-xl xl:rounded-full'>
+    <nav className='fixed z-50 bottom-4 left-1/2 -translate-x-1/2 w-[92%] max-w-[420px] xl:w-16 xl:max-w-md xl:right-[2%] xl:left-auto xl:translate-x-0 xl:top-0 xl:bottom-auto xl:h-screen flex flex-col items-center xl:justify-center gap-y-4'>
+      <div className='flex w-full xl:flex-col items-center justify-between xl:justify-center gap-y-10 px-4 md:px-6 xl:px-0 h-[64px] bg-white/10 xl:h-max py-6 backdrop-blur-sm text-3xl xl:text-xl rounded-full shadow-lg'>
         {
           navData.map((item, index) => {
             return (

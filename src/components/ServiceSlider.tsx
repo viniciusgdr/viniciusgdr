@@ -31,11 +31,6 @@ const serviceData = [
     description: "Desenvolvimento de aplicativos mobile para Android e iOS.",
   },
   {
-    icon: <RxCode />,
-    title: "APIs",
-    description: "Desenvolvimento de APIs RESTful.",
-  },
-  {
     icon: <SiJest />,
     title: "Testes Unitários",
     description: "Desenvolvimento de testes unitários para garantir a qualidade do código.",
