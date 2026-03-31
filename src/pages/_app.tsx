@@ -3,7 +3,26 @@ import './globals.css'
 import { motion, AnimatePresence } from 'framer-motion'
 import Transition from '@viniciusgdr/components/Transition'
 import { useRouter } from 'next/router'
-import { NextSeo } from 'next-seo';
+import { DefaultSeo } from 'next-seo';
+import Head from 'next/head';
+
+const SITE_URL = 'https://viniciusgdr.com';
+const SITE_NAME = 'Carlos Vinicius (viniciusgdr)';
+const DEFAULT_DESCRIPTION = 'Carlos Vinicius (viniciusgdr) — Desenvolvedor fullstack especializado em aplicações web e mobile com Node.js, React, Next.js, TypeScript e Docker. Portfolio, projetos e contato.';
+
+const personJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Carlos Vinicius',
+  alternateName: ['viniciusgdr', 'vinicius gdr', 'gdr'],
+  url: SITE_URL,
+  jobTitle: 'Desenvolvedor Fullstack',
+  knowsAbout: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Node.js', 'Docker', 'Clean Architecture', 'Go', 'Python'],
+  sameAs: [
+    'https://github.com/viniciusgdr',
+    'https://linkedin.com/in/viniciusgdr',
+  ],
+};
 
 export default function RootLayout({ Component, pageProps }: {
   Component: any,
@@ -13,23 +32,31 @@ export default function RootLayout({ Component, pageProps }: {
 
   return (
     <Layout>
-      <NextSeo
-        defaultTitle="Carlos Vinicius - Backend, Frontend | viniciusgdr"
-        description="Carlos Vinicius - Desenvolvedor Web e Mobile - HTML, CSS, JavaScript, React, Next.js, Node.js, TypeScript, Docker, Clean Architecture, Aplicações Escaláveis, Aplicações Web, Aplicações Mobile | viniciusgdr"
-        canonical='https://viniciusgdr.com'
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+        />
+      </Head>
+      <DefaultSeo
+        defaultTitle={`Carlos Vinicius (viniciusgdr) — Desenvolvedor Fullstack`}
+        description={DEFAULT_DESCRIPTION}
+        canonical={SITE_URL}
         openGraph={{
-          url: 'https://viniciusgdr.com',
-          title: 'Carlos Vinicius - Desenvolvedor Web e Mobile',
-          description: 'Carlos Vinicius - Desenvolvedor Web e Mobile - HTML, CSS, JavaScript, React, Next.js, Node.js, TypeScript, Docker, Clean Architecture, Aplicações Escaláveis, Aplicações Web, Aplicações Mobile | viniciusgdr',
+          type: 'website',
+          locale: 'pt_BR',
+          url: SITE_URL,
+          siteName: SITE_NAME,
+          title: 'Carlos Vinicius (viniciusgdr) — Desenvolvedor Fullstack',
+          description: DEFAULT_DESCRIPTION,
           images: [
             {
-              url: 'https://viniciusgdr.com/og-image.png',
+              url: `${SITE_URL}/og-image.png`,
               width: 1200,
               height: 630,
-              alt: 'Carlos Vinicius - Desenvolvedor Web e Mobile',
+              alt: 'Carlos Vinicius (viniciusgdr) — Desenvolvedor Fullstack',
             },
           ],
-          site_name: 'Carlos Vinicius',
         }}
         twitter={{
           handle: '@viniciusgdr1',
@@ -37,7 +64,7 @@ export default function RootLayout({ Component, pageProps }: {
           cardType: 'summary_large_image',
         }}
         themeColor='#000000'
-        titleTemplate='%s | Carlos Vinicius - Desenvolvedor Web e Mobile'
+        titleTemplate='%s | viniciusgdr — Carlos Vinicius'
         additionalLinkTags={[
           {
             rel: 'icon',
@@ -47,7 +74,15 @@ export default function RootLayout({ Component, pageProps }: {
         additionalMetaTags={[
           {
             name: 'viewport',
-            content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0',
+            content: 'width=device-width, initial-scale=1',
+          },
+          {
+            name: 'keywords',
+            content: 'viniciusgdr, vinicius gdr, gdr, carlos vinicius, desenvolvedor fullstack, developer, portfolio, react, next.js, node.js, typescript, docker',
+          },
+          {
+            name: 'author',
+            content: 'Carlos Vinicius (viniciusgdr)',
           },
           {
             name: 'apple-mobile-web-app-capable',
@@ -59,7 +94,7 @@ export default function RootLayout({ Component, pageProps }: {
           },
           {
             name: 'apple-mobile-web-app-title',
-            content: 'Carlos Vinicius',
+            content: 'viniciusgdr',
           },
           {
             name: 'theme-color',
@@ -69,7 +104,7 @@ export default function RootLayout({ Component, pageProps }: {
         languageAlternates={[
           {
             hrefLang: 'pt-BR',
-            href: 'https://viniciusgdr.com',
+            href: SITE_URL,
           },
         ]}
       />
