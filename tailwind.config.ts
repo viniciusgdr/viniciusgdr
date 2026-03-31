@@ -34,7 +34,6 @@ const config: Config = {
         'spin-slow': 'spin 6s linear infinite',
       },
       fontFamily: {
-        poppins: [`var(--font-poppins)`, 'sans-serif'],
         sora: [`var(--font-sora)`, 'sans-serif'],
       },
     },
@@ -44,6 +43,6 @@ const config: Config = {
       DEFAULT: '15px',
     },
   },
-  plugins: [require('daisyui'), require('tailwind-scrollbar')],
+  plugins: [require('tailwind-scrollbar')],
 }
 export default config

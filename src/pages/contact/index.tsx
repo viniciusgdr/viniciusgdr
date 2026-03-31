@@ -2,8 +2,10 @@ import Link from 'next/link';
 import { FaWhatsapp } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../../variants';
+import { NextSeo } from 'next-seo';
 const Contact = () => {
   return <div className=''>
+    <NextSeo title='Contato' description='Entre em contato com Carlos Vinicius (viniciusgdr) — desenvolvedor fullstack disponível para projetos, freelance e consultoria técnica.' canonical='https://viniciusgdr.com/contact' />
     <div className='container mx-auto py-12 md:py-32 text-center xl:text-left flex items-center justify-center h-full'>
       <div className='flex flex-col w-full max-w-[700px]'>
         <motion.h2
@@ -20,7 +22,7 @@ const Contact = () => {
           animate="show"
           exit="hidden"
           className='mb-12'>
-          Se você tem um projeto em mente ou gostaria de conversar sobre alguma tecnologia, fique a vontade para entrar em contato.
+          Se você tem um projeto em mente ou gostaria de conversar sobre alguma tecnologia, fique à vontade para entrar em contato.
         </motion.p>
         <motion.div
           variants={fadeIn("up", 0.5)}

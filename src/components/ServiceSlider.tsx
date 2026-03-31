@@ -31,9 +31,19 @@ const serviceData = [
     description: "Desenvolvimento de aplicativos mobile para Android e iOS.",
   },
   {
+    icon: <RxCode />,
+    title: "APIs e Integrações",
+    description: "Criação de APIs RESTful, microsserviços e integrações entre sistemas.",
+  },
+  {
     icon: <SiJest />,
-    title: "Testes Unitários",
-    description: "Desenvolvimento de testes unitários para garantir a qualidade do código.",
+    title: "Qualidade de Código",
+    description: "Testes automatizados, CI/CD e boas práticas de engenharia de software.",
+  },
+  {
+    icon: <RxRocket />,
+    title: "Consultoria Técnica",
+    description: "Análise de arquitetura, code review e orientação para equipes de desenvolvimento.",
   },
 ];
 
@@ -60,7 +70,7 @@ const ServiceSlider = () => {
       {
         serviceData.map((item, index) => {
           return <SwiperSlide key={index}>
-            <div className='bg-[rgba(65,47,123)] rounded-lg h-full w-full px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300'>
+            <div className='bg-[rgba(65,47,123,0.15)] rounded-lg h-full w-full px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89,65,169,0.25)] transition-all duration-300'>
               <div className='text-4xl text-accent mb-4'>{item.icon}</div>
               <div className='mb-8'>
                 <div className='mb-2 text-lg'>{item.title}</div>

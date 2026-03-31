@@ -1,4 +1,3 @@
-// icons
 import Circles from '@viniciusgdr/components/Circles';
 import { useState } from 'react';
 import {
@@ -6,17 +5,10 @@ import {
   FaCss3,
   FaJs,
   FaReact,
-  FaWordpress,
-  FaFigma,
 } from "react-icons/fa";
 
 import {
   SiNextdotjs,
-  SiFramer,
-  SiAdobexd,
-  SiAdobephotoshop,
-  SiLaravel,
-  SiLivewire,
   SiNestjs,
   SiMongodb,
   SiSqlite,
@@ -24,8 +16,7 @@ import {
   SiTypescript,
   SiPrisma,
   SiNodedotjs,
-  SiGoland,
-  SiPhp,
+  SiGo,
   SiC,
   SiReact,
   SiExpo,
@@ -34,14 +25,14 @@ import {
 } from "react-icons/si";
 
 import { motion } from 'framer-motion';
-import Avatar from '@viniciusgdr/components/Avatar';
 import { fadeIn } from '../../../variants';
 import CountUp from 'react-countup';
 import Image from 'next/image';
+import { NextSeo } from 'next-seo';
 //  data
 const aboutData = [
   {
-    title: 'skills',
+    title: 'habilidades',
     info: [
       {
         title: 'Web Development',
@@ -58,9 +49,8 @@ const aboutData = [
         icons: [
           <SiNodedotjs key={0} />,
           <SiTypescript key={1} />,
-          <SiGoland key={2} />,
+          <SiGo key={2} />,
           <SiDart key={3} />,
-          <SiC key={4} />,
           <SiNestjs key={5} />
         ]
       },
@@ -91,20 +81,16 @@ const aboutData = [
         stage: 'Jun. 2025 - Atual'
       },
       {
-        title: 'Projeto TomoriBOT WhatsApp',
-        stage: '2020 - Atual',
-      },
-      {
         title: 'CargoBR',
         stage: 'Set. 2024 - Mar. 2025',
       },
       {
-        title: 'Auxiliar de Monitoramento na Cooper-UNE',
-        stage: 'Mar. 2022 - Abr. 2024',
+        title: 'Projeto TomoriBOT WhatsApp',
+        stage: '2020 - Atual',
       },
       {
-        title: 'TuttaBOT: Apostas Online Automatizadas para a Blaze',
-        stage: '2022-2023',
+        title: 'Auxiliar de Monitoramento na Cooper-UNE',
+        stage: 'Mar. 2022 - Abr. 2024',
       },
     ],
   },
@@ -152,15 +138,8 @@ const aboutData = [
 const About = () => {
   const [index, setIndex] = useState(0);
   return <div className='pt-12 pb-32 md:pt-32 text-center xl:text-left'>
+    <NextSeo title='Sobre' description='Sobre Carlos Vinicius (viniciusgdr) — desenvolvedor fullstack com +6 anos de experiência em Node.js, React, TypeScript. Habilidades, cursos e trajetória profissional.' canonical='https://viniciusgdr.com/about' />
     <Circles />
-    <motion.div
-      variants={fadeIn('right', 0.2)}
-      initial='hidden'
-      animate='show'
-      exit='hidden'
-      className='hidden xl:flex absolute bottom-0 -left-[370px]'>
-      <Avatar />
-    </motion.div>
     <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6'>
       <div className='flex-1 flex flex-col justify-center'>
         <motion.h2
@@ -170,7 +149,7 @@ const About = () => {
           exit='hidden'
           className='h2 max-w-[640px] mx-auto xl:mx-0'
         >
-          +3 anos criando <span className='text-accent'>experiências</span> digitais.
+        +6 anos construindo <span className='text-accent'>produtos</span> digitais.
         </motion.h2>
         <motion.a
           variants={fadeIn('right', 0.4)}
@@ -190,7 +169,7 @@ const About = () => {
           animate='show'
           exit='hidden'
           className='max-w-[680px] mx-auto xl:mx-0 mb-6 xl:mb-8 px-2 xl:px-0'>
-          Há cinco anos, iniciei minha jornada como programador freelancer. Desde então, desenvolvi uma variedade de projetos para atender às demandas dos clientes. Atualmente sou dono da Accio Educacional, onde desenvolvi uma solução de reconhecimento facial para escolas e atuo como desenvolvedor full stack. Minha paixão sempre foi criar soluções inovadoras que impactam positivamente a vida das pessoas.
+          Comecei a programar em 2020 como freelancer. Desde lá, construí projetos de reconhecimento facial, bots de larga escala, plataformas educacionais e sistemas logísticos. Hoje sou fundador da Accio Educacional e atuo como desenvolvedor fullstack com foco em arquitetura limpa e aplicações escaláveis.
         </motion.p>
         <motion.div
           variants={fadeIn('right', 0.6)}
@@ -273,10 +252,10 @@ const About = () => {
                 )}
               </div>
               {
-                'certs' in item && <dialog id={'modal_' + i} className="modal z-50">
-                  <div className="modal-box bg-primary">
+                'certs' in item && <dialog id={'modal_' + i} className="z-50 text-white">
+                  <div className="relative max-w-lg w-[90%] mx-auto p-6 rounded-2xl shadow-xl bg-primary text-white">
                     <form method="dialog">
-                      <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                      <button className="absolute right-3 top-3 w-8 h-8 rounded-full bg-transparent hover:bg-white/10 flex items-center justify-center text-sm cursor-pointer text-white">✕</button>
                     </form>
                     <div className='flex items-center gap-3'>
                       <h3 className="font-bold text-lg">
@@ -299,9 +278,9 @@ const About = () => {
                         })
                       }
                     </div>
-                    <div className="modal-action">
+                    <div className="flex justify-end gap-2 mt-4">
                       <form method="dialog">
-                        <button className="btn">Fechar</button>
+                        <button className="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 cursor-pointer transition-colors">Fechar</button>
                       </form>
                     </div>
                   </div>

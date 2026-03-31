@@ -92,9 +92,9 @@ const WorkSlider = () => {
                       <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700"></div>
                       <div className="absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300">
                         <div className="flex items-center gap-x-2 text-[13px] tracking-[0.2em]">
-                          <div className="delay-100">LIVE</div>
+                          <div className="delay-100">VER</div>
                           <div className="translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150">
-                            PROJECT
+                            PROJETO
                           </div>
                           <div className="text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150">
                             <BsArrowRight />
@@ -102,10 +102,10 @@ const WorkSlider = () => {
                         </div>
                       </div>
                     </div>
-                    <dialog id={"modal_" + index2} className="modal z-50">
-                      <div className="modal-box bg-primary">
+                    <dialog id={"modal_" + index2} className="z-50 text-white">
+                      <div className="relative max-w-lg w-[90%] mx-auto p-6 rounded-2xl shadow-xl bg-primary text-white">
                         <form method="dialog">
-                          <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+                          <button className="absolute right-3 top-3 w-8 h-8 rounded-full bg-transparent hover:bg-white/10 flex items-center justify-center text-sm cursor-pointer text-white">
                             ✕
                           </button>
                         </form>
@@ -132,7 +132,7 @@ const WorkSlider = () => {
                           </a>{" "}
                           para baixar o Tor Browser.
                         </p>
-                        <div className="bg-base-100 p-2 rounded-lg mt-4">
+                        <div className="bg-white/5 p-2 rounded-lg mt-4">
                           <h3 className="font-bold text-lg text-center pt-2">
                             Link do site
                           </h3>
@@ -140,13 +140,13 @@ const WorkSlider = () => {
                             {image.url}
                           </p>
                         </div>
-                        <div className="modal-action">
+                        <div className="flex justify-end gap-2 mt-4">
                           <form method="dialog">
-                            <button className="btn">Fechar</button>
+                            <button className="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 cursor-pointer transition-colors">Fechar</button>
                           </form>
                           <form method="dialog">
                             <button
-                              className="btn btn-success"
+                              className="px-4 py-2 rounded-lg bg-green-600 text-white hover:bg-green-700 cursor-pointer transition-colors"
                               onClick={() => {
                                 window.open(image.url, "_blank");
                               }}
@@ -178,9 +178,9 @@ const WorkSlider = () => {
                       <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700"></div>
                       <div className="absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300">
                         <div className="flex items-center gap-x-2 text-[13px] tracking-[0.2em]">
-                          <div className="delay-100">LIVE</div>
+                          <div className="delay-100">VER</div>
                           <div className="translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150">
-                            PROJECT
+                            PROJETO
                           </div>
                           <div className="text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150">
                             <BsArrowRight />
@@ -188,10 +188,10 @@ const WorkSlider = () => {
                         </div>
                       </div>
                     </div>
-                    <dialog id={"modal_" + index2} className="modal z-50">
-                      <div className="modal-box bg-primary">
+                    <dialog id={"modal_" + index2} className="z-50 text-white">
+                      <div className="relative max-w-lg w-[90%] mx-auto p-6 rounded-2xl shadow-xl bg-primary text-white">
                         <form method="dialog">
-                          <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+                          <button className="absolute right-3 top-3 w-8 h-8 rounded-full bg-transparent hover:bg-white/10 flex items-center justify-center text-sm cursor-pointer text-white">
                             ✕
                           </button>
                         </form>
@@ -206,9 +206,9 @@ const WorkSlider = () => {
                           Este site ainda não está disponível para visualização.
                           Por favor, confira outros projetos.
                         </p>
-                        <div className="modal-action">
+                        <div className="flex justify-end gap-2 mt-4">
                           <form method="dialog">
-                            <button className="btn">Fechar</button>
+                            <button className="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 cursor-pointer transition-colors">Fechar</button>
                           </form>
                         </div>
                       </div>
@@ -230,9 +230,9 @@ const WorkSlider = () => {
                       <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700"></div>
                       <div className="absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300">
                         <div className="flex items-center gap-x-2 text-[13px] tracking-[0.2em]">
-                          <div className="delay-100">LIVE</div>
+                          <div className="delay-100">VER</div>
                           <div className="translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150">
-                            PROJECT
+                            PROJETO
                           </div>
                           <div className="text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150">
                             <BsArrowRight />

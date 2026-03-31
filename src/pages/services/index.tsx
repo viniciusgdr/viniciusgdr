@@ -3,10 +3,12 @@ import Circles from "@viniciusgdr/components/Circles";
 import ServiceSlider from "@viniciusgdr/components/ServiceSlider";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../variants";
+import { NextSeo } from 'next-seo';
 
 const Services = () => {
   return (
     <div className="py-12 md:py-36 flex items-center">
+      <NextSeo title='Serviços' description='Serviços de desenvolvimento web, mobile, APIs, automação e consultoria técnica por Carlos Vinicius (viniciusgdr). React, Next.js, Node.js, Docker.' canonical='https://viniciusgdr.com/services' />
       <Circles />
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
@@ -27,7 +29,7 @@ const Services = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Desenvolvo aplicações web escalaveis e mobile com as melhores
+              Desenvolvo aplicações web escaláveis e mobile com as melhores
               tecnologias do mercado.
               Aqui está uma lista de serviços que ofereço.
             </motion.p>

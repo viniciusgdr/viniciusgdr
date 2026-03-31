@@ -2,11 +2,13 @@ import Bulb from "@viniciusgdr/components/Bulb";
 import Circles from "@viniciusgdr/components/Circles";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../variants";
+import { NextSeo } from 'next-seo';
 import WorkSlider from '@viniciusgdr/components/WorkSlider';
 
 const Work = () => {
   return (
     <div className="py-12 md:py-36 flex items-center">
+      <NextSeo title='Projetos' description='Projetos desenvolvidos por Carlos Vinicius (viniciusgdr) — aplicações web, mobile, APIs e sistemas com React, Next.js, Node.js e mais.' canonical='https://viniciusgdr.com/work' />
       <Circles />
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
@@ -27,7 +29,7 @@ const Work = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Ao lado, você pode visualizar todos meus últimos projetos. Clique para saber mais!
+              Abaixo, você pode visualizar todos meus últimos projetos. Clique para saber mais!
             </motion.p>
           </div>
           <motion.div
